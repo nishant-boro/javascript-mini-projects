@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.keyboard {
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.key {
+    border:5px solid white;
+    background-color: purple;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: green;
+}
+
+kbd {
+    display: block;
+}
+
+.sound {
+    font-size: 10px;
+    text-transform: uppercase;
+}
