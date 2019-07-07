@@ -4,3 +4,5 @@
 **Drum Kit**: Event Listeners, css, data-attributes, audioHTML.
 
 **CSS-Clock**: css rotate,turning off the transition temporarily, Date() in js.
+
+**CSS-Variables**: updating css variables using javascript.
