@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="panels">
+        <div class="panel panel1">
+            <p>This</p>
+            <p>Lets</p>
+            <p>in air</p>
+        </div>
+        <div class="panel panel2">
+            <p>Just</p>
+            <p>make</p>
+            <p>some pies</p>
+        </div>
+        <div class="panel panel3">
+            <p>Wreck</p>
+            <p>a</p>
+            <p>ship</p>
+        </div>
+        <div class="panel panel4">
+            <p>Write</p>
+            <p>better</p>
+            <p>code</p>
+        </div>
+        <div class="panel panel5">
+            <p>Hello</p>
+            <p>world</p>
+            <p>program</p>
+        </div>
+    </div>
+</body>
+<script>
+    const activate = document.querySelectorAll(`.panel`);
+    activate.forEach(key => key.addEventListener('click',() =>{
+        key.classList.toggle('open')
+    }))
+    activate.forEach(key => key.addEventListener('transitionend',(e) =>{
+        if(e.propertyName.includes('flex')) {
+            key.classList.toggle('open-active')
+        }
+    }))
+</script>
+</html>
