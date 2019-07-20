@@ -8,3 +8,5 @@
 **CSS-Variables**: updating css variables using javascript.
 
 **flex-panels**: flex-nesting, box-sizing,universal selector doesnt selects psuedo elements,use of > selector,JS classList toggle
+
+**API-Search**: array methods, string methods, regexp.
