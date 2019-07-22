@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holding shift to check multiple boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="inbox">
+        <div class="item">
+            <input type="checkbox">
+            <p>Checkbox one</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>Checkbox two</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>Checkbox three</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>Checkbox four</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p>Checkbox five</p>
+        </div>
+    </div>
+</body>
+<script>
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+    let lastChecked;
+    function handleCheck(e) {
+        let inBetween = false;
+        if (e.shiftKey && this.checked) {
+            checkboxes.forEach(checkbox => {
+                console.log(checkbox);
+                if (checkbox === this || checkbox === lastChecked) {
+                    inBetween = !inBetween;
+                    console.log('Starting to check them in between!');
+                }
+                if (inBetween) {
+                    checkbox.checked = true;
+                }
+            });
+        }
+        lastChecked = this;
+    }
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+</script>
+</html>
