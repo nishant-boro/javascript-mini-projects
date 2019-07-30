@@ -13,6 +13,6 @@
 
 **Slide-in-on-scroll**: debounce, HTMLElement.offsetTop, window scrolling.
 
-**Other projects**: Splice,slice.
+**Other projects**: Splice,slice,parseFloat, split
 
 **Local Storage and Event Delegation**: event delegation, localstorage.
