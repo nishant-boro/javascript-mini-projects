@@ -10,3 +10,7 @@
 **flex-panels**: flex-nesting, box-sizing,universal selector doesnt selects psuedo elements,use of > selector,JS classList toggle
 
 **API-Search**: array methods, string methods, regexp.
+
+**Slide-in-on-scroll**: debounce, HTMLElement.offsetTop, window scrolling.
+
+**Other projects**: Splice,slice.
