@@ -16,3 +16,5 @@
 **Other projects**: Splice,slice,parseFloat, split, Bubbling, event propogation, once.
 
 **Local Storage and Event Delegation**: event delegation, localstorage.
+
+**mouse-text-shadow**: es6 destructuring, HTMLelement.offsetWidth/left/top, mousemove event properties
